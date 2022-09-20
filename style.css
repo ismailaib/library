@@ -42,7 +42,6 @@ body{
   justify-content: center;
 }
 .add-box .icon{
-  display: none;
   height: 78px;
   width: 78px;
   color: #ace67c;
@@ -51,8 +50,7 @@ body{
   justify-content: center;
   border: 2px dashed #ace67c;
 }
-.add-box p{
-  display: none;
+ p{
   color: #ace67c;
   font-weight: 500;
   margin-top: 20px;

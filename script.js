@@ -107,6 +107,6 @@ addBtn.addEventListener("click", e => {
 var playPause = anime({
     targets: 'li.add-box',
     left: 0,
-    delay: 1000
+    delay: 220
     });
- 
+
