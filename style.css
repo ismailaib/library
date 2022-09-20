@@ -6,11 +6,11 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-  background: #929292;
+  background: #202832;
 }
 ::selection{
   color: #fff;
-  background: #cccccc;
+  background: #273950;
 }
 .wrapper{
   margin: 50px;
@@ -23,8 +23,8 @@ body{
   list-style: none;
   border-radius: 5px;
   padding: 15px 20px 20px;
-  background: #fff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  background: #2a3542;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 5%);
 }
 .add-box, .icon, .bottom-content, 
 .popup, header, .settings .menu li{
@@ -38,16 +38,18 @@ body{
   justify-content: center;
 }
 .add-box .icon{
+  display: none;
   height: 78px;
   width: 78px;
-  color: #7a7a7a;
+  color: #ace67c;
   font-size: 40px;
   border-radius: 50%;
   justify-content: center;
-  border: 2px dashed #7a7a7a;
+  border: 2px dashed #ace67c;
 }
 .add-box p{
-  color: #7a7a7a;
+  display: none;
+  color: #ace67c;
   font-weight: 500;
   margin-top: 20px;
 }
@@ -84,7 +86,7 @@ body{
 }
 .note span{
   display: block;
-  color: #575757;
+  color: #c7c7c7;
   font-size: 16px;
   margin-top: 5px;
 }
@@ -127,8 +129,9 @@ body{
   padding: 17px 15px;
   cursor: pointer;
   box-shadow: none;
-  border-radius: 0;
+  border-radius: 0px;
   justify-content: flex-start;
+  background: aliceblue;
 }
 .menu li:last-child{
   margin-bottom: 0;
@@ -171,11 +174,11 @@ body{
 .popup-box.show .popup{
   transform: translate(-50%, -50%) scale(1);
 }
-.popup .content{
+.popup .content {
   border-radius: 5px;
-  background: #fff;
+  background: #2a3542;
   width: calc(100% - 15px);
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  box-shadow: 0 0 15px rgb(0 0 0 / 10%);
 }
 .content header{
   padding: 15px 25px;
@@ -184,6 +187,7 @@ body{
 .content header p{
   font-size: 20px;
   font-weight: 500;
+  color: white;
 }
 .content header i{
   color: #8b8989;
@@ -200,6 +204,7 @@ form .row label{
   font-size: 18px;
   display: block;
   margin-bottom: 6px;
+  color: white;
 }
 form :where(input, textarea){
   height: 50px;
@@ -208,7 +213,9 @@ form :where(input, textarea){
   font-size: 17px;
   padding: 0 15px;
   border-radius: 4px;
+  background: #2e2e2e;
   border: 1px solid #999;
+  color: white;
 }
 form :where(input, textarea):focus{
   box-shadow: 0 2px 4px rgba(0,0,0,0.11);
@@ -217,6 +224,7 @@ form .row textarea{
   height: 150px;
   resize: none;
   padding: 8px 15px;
+  color: white;
 }
 form button{
   width: 100%;
@@ -227,9 +235,8 @@ form button{
   cursor: pointer;
   font-size: 17px;
   border-radius: 4px;
-  background: #7a7a7a;
+  background: #ace67c;
 }
-
 @media (max-width: 660px){
   .wrapper{
     margin: 15px;
