@@ -7,12 +7,14 @@
 }
 body{
   background: #202832;
+  overflow: hidden;
 }
 ::selection{
   color: #fff;
   background: #273950;
 }
 .wrapper{
+  position: relative;
   margin: 50px;
   display: grid;
   gap: 25px;
@@ -33,6 +35,8 @@ body{
   justify-content: space-between;
 }
 .add-box{
+  position: relative;
+  left: 70rem;
   cursor: pointer;
   flex-direction: column;
   justify-content: center;

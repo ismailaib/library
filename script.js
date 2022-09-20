@@ -103,3 +103,10 @@ addBtn.addEventListener("click", e => {
         closeIcon.click();
     }
 });
+
+var playPause = anime({
+    targets: 'li.add-box',
+    left: 0,
+    delay: 1000
+    });
+ 
