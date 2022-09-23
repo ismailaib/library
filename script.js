@@ -110,3 +110,4 @@ var playPause = anime({
     delay: 220
     });
 
+
