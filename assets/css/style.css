@@ -1,106 +1,142 @@
-@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@500;700;800;900&family=Raleway:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@500;700;800;900&family=Lexend+Mega:wght@300;500;700;800&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lexend Mega', sans-serif;
+    font-weight: 300;
     text-decoration: none;
     list-style: none;
-    color: #242424;
-}
-html {
-    scroll-behavior: smooth;
-  }
-body {
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    background: #ebebeb71;
-    background: url(/assets/img/bg2.jpg),url(img/633.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    scroll-behavior: smooth;
 }
 
-body:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: inherit;
-    /*grayscale for background image*/
-    -webkit-filter: grayscale(-0.5); 
-    -webkit-filter: grayscale(50%); 
-    -moz-filter: grayscale(50%);
-    filter: grayscale(-1);
-  }
-.header {
-    
-    height: 6rem;
+body,html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    overflow: hidden;
+    height: 100vh;
 }
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
+main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.main-img{
+    background-image: url(/assets/img/93.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 15px;
+    border-radius: 20px; 
+}
+.main-img:hover {
+    transform: scale(10px);
+}
+.main-content {
+    margin: 30px;
+    display: grid;
+    grid-template-rows: 5% 7% 5% 19% 50% auto;
+}
+i {
+    color: #807ef7;
+}
+h1 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    backdrop-filter: blur(20px);
-    padding: 5% 6%;
-    height: 6rem;
-    background: #ffffff4d;
+    gap: 1rem;
 }
-section {
-    padding: 120px 5%;
+.steps {
+    height: 3rem;
+    display: flex;
+    align-items: end;
+    gap: 0.5rem;
+}
+.step-1, .step-2,.step-3 ,.step-4 ,.step-5, .step-6{
+    width: 3rem;
+    height: 0.7rem;
+    background: #807ef7;
+    border-radius: 20px;
+}
+.step-1{
+    background: #807ef7;
+}
+.step-2{
+    background: #d6d6d6;
+}
+.step-3{
+    background: #d6d6d6;
+}
+.step-4{
+    background: #d6d6d6;
+}
+.step-5{
+    background: #d6d6d6;
+}
+.step-6{
+    background: #d6d6d6;
 }
 h3 {
+    color: grey;
+}
+.title {
+    display: flex;
+    align-items: end;
+}
+.title h1 {
+    font-size: 3.4rem;
+    color: rgb(44, 44, 44);
+}
+.categories {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 2rem;
     gap: 1rem;
+}
+.cat-1 ,.cat-2 ,.cat-3 ,.cat-4 {
+    background: #243849;
+    border: 2px solid #243849;
+    border-radius: 20px;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
+    color: white;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
 }
-
-i {
-    color: #000000;
-    font-size: 1.5rem;
+.cat-1:hover ,.cat-2:hover  ,.cat-3:hover  ,.cat-4:hover  {
+    background: #ffffff;
+    border: 2px solid #243849;
+    color: #243849;
+}
+.categories i {
+    font-size: 4rem;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+#type-1 ,#type-2{
+    width: 8rem;
+    height: 3rem;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 500;
     cursor: pointer;
 }
-nav{
-    height: 12%;
-    background: #fff;
-    display: grid;
-    grid-template-columns: 20% auto 20%;
+#type-1 {
+    background: none;
 }
-header h2 {
-    font-size: 2.3rem;
+#type-2 {
+    background: #807ef7;
+    color: white;
+    border-radius: 15px;
+    transition: all 300ms ease;
 }
-header h2 span{
-    color: #ff7676;
-}
-.lien .navbar {
-    display: flex;
-    gap: 3rem;
-}
-a {
-    color: #2b2b2b;
-    transition: all 300ms ease-in-out;
-    font-size: 1.1rem;
-}
-a:hover {
-    color: #ff7676;
-}
-.fa-solid, .fas {
-    font-size: 1.7rem;
-    font-weight: 900;
-}
-
-#hideDiv {
-    background-color: yellowgreen;
-    height: 150px;
-    width: 150px;
-    display: none;
+#type-2:hover {
+    background: #ffffff;
+    color: #807ef7;
+    border: 2px solid #807ef7;
+    border-radius: 15px;
 }
