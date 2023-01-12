@@ -69,7 +69,7 @@ h1 {
     gap: 2rem;
     justify-content: flex-end;
 }
-#type-1 ,#type-2{
+#next-button ,#prev-button{
     width: 8rem;
     height: 3rem;
     border: none;
@@ -77,16 +77,16 @@ h1 {
     font-weight: 500;
     cursor: pointer;
 }
-#type-1 {
+#prev-button {
     background: none;
 }
-#type-2 {
+#next-button {
     background: #807ef7;
     color: white;
     border-radius: 15px;
     transition: all 300ms ease;
 }
-#type-2:hover {
+#next-button:hover {
     background: #ffffff;
     color: #807ef7;
     border: 2px solid #807ef7;
@@ -109,4 +109,7 @@ footer {
     background-position: center;    
     border-radius: 22px;
     margin: 30px;
+}
+.content-div {
+    display: none;
 }
