@@ -15,26 +15,15 @@ body,html {
     overflow: hidden;
     height: 100vh;
 }
-main {
+#main {
+    display: grid;
+    grid-template-rows: 10% auto 15%;
     height: 100%;
-    display: grid;
-    grid-template-columns: 70% 30%;
 }
-.main-img{
-    background-image: url(/assets/img/93.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 15px;
-    border-radius: 20px; 
-}
-.main-img:hover {
-    transform: scale(10px);
-}
-.main-content {
+.logo {
     margin: 30px;
-    display: grid;
-    grid-template-rows: 5% 7% 5% 19% 50% auto;
+    display: flex;
+    align-items: center;
 }
 i {
     color: #807ef7;
@@ -47,7 +36,7 @@ h1 {
 .steps {
     height: 3rem;
     display: flex;
-    align-items: end;
+    align-items: center;
     gap: 0.5rem;
 }
 .step-1, .step-2,.step-3 ,.step-4 ,.step-5, .step-6{
@@ -74,48 +63,11 @@ h1 {
 .step-6{
     background: #d6d6d6;
 }
-h3 {
-    color: grey;
-}
-.title {
-    display: flex;
-    align-items: end;
-}
-.title h1 {
-    font-size: 3.4rem;
-    color: rgb(44, 44, 44);
-}
-.categories {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    margin-top: 2rem;
-    gap: 1rem;
-}
-.cat-1 ,.cat-2 ,.cat-3 ,.cat-4 {
-    background: #243849;
-    border: 2px solid #243849;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10%;
-    color: white;
-    cursor: pointer;
-    transition: all 300ms ease-in-out;
-}
-.cat-1:hover ,.cat-2:hover  ,.cat-3:hover  ,.cat-4:hover  {
-    background: #ffffff;
-    border: 2px solid #243849;
-    color: #243849;
-}
-.categories i {
-    font-size: 4rem;
-}
 .btn {
     display: flex;
     align-items: center;
     gap: 2rem;
+    justify-content: flex-end;
 }
 #type-1 ,#type-2{
     width: 8rem;
@@ -139,4 +91,22 @@ h3 {
     color: #807ef7;
     border: 2px solid #807ef7;
     border-radius: 15px;
+}
+footer {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.content .content-img {
+    background: url(/assets/img/35.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+    border-radius: 22px;
+    margin: 30px;
 }
