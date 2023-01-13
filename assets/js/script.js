@@ -31,9 +31,9 @@ nextButton.addEventListener("click", function() {
 });
 
 var imageIndex = 0;
-var images = ['../img/35.jpg','../img/39.jpg','../img/51.jpg','../img/93.jpg'];
+ var images = ['assets/img/35.jpg','assets//img/39.jpg','assets//img/51.jpg','assets/img/93.jpg'];
 
-setInterval(function() {
+ setInterval(function() {
     document.getElementById("content-img").style.backgroundImage = `url(${images[imageIndex]})`;
     imageIndex = (imageIndex + 1) % images.length;
 }, 5000);

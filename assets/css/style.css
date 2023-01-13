@@ -113,6 +113,7 @@ footer {
 .content {
     display: grid;
     grid-template-columns: 40% 60%;
+    overflow-x: scroll;
 }
 .content .content-img {
     background-image: url('../img/35.jpg');
@@ -246,7 +247,7 @@ footer {
 #content4 .btn {
     width: 60%;
 }
-#content4 button {
+#content4 a {
     width: 100%;
     height: 3rem;
     background: #807ef7;
@@ -255,8 +256,11 @@ footer {
     color: white;
     cursor: pointer;
     transition: all 300ms ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#content4 button:hover {
+#content4 a:hover {
     width: 100%;
     height: 3rem;
     background: #ffffff;
