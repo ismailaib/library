@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+#main {
+    display: grid;
+    grid-template-rows: 10% auto;
+    height: 100%;
+}
+.content {
+    display: grid;
+    grid-template-columns: 25% auto;
+}
+.books {
+    display: grid;
+    grid-template-rows: auto 10%;
+}
+.btn #next {
+    width: 30%;
+    height: 3rem;
+    background: #807ef7;
+    border: none;
+    border-radius: 22px;
+    color: white;
+    cursor: pointer;
+    transition: all 300ms ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn #next:hover {
+    background: #ffffff;
+    border: 2px solid #807ef7;
+    border-radius: 22px;
+    color: #807ef7;
+    cursor: pointer;
+}

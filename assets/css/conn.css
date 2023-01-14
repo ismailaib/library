@@ -85,7 +85,7 @@ footer {
     margin: 30px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 .content {
     display: grid;
@@ -134,9 +134,6 @@ footer {
     align-items: center;
     padding: 3rem;
     justify-content: center;
-}
-.content-div {
-    display: none;
 }
 
 .bullet {

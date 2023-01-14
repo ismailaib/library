@@ -50,7 +50,18 @@ function select3() {
 function select4() {
     document.getElementById("cat4").style.backgroundColor = "#e4e4f7";
 }
-
+function select5() {
+  document.getElementById("cat5").style.backgroundColor = "#e4e4f7";
+}
+function select6() {
+  document.getElementById("cat6").style.backgroundColor = "#e4e4f7";
+}
+function select7() {
+  document.getElementById("cat7").style.backgroundColor = "#e4e4f7";
+}
+function select8() {
+  document.getElementById("cat8").style.backgroundColor = "#e4e4f7";
+}
 $(document).ready(function() {
     $("#name").on("input", function() {
       if ($(this).val().length === 0) {
