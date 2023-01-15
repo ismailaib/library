@@ -57,6 +57,7 @@ h1 {
     align-items: center;
     gap: 2rem;
     justify-content: flex-end;
+    margin: 20px;
 }
 #next-button ,#prev-button{
     width: 8rem;

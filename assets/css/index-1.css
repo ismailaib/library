@@ -1,13 +1,28 @@
+body,html {
+    overflow: scroll;
+}
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: #807ef7;
+    height: 5rem;
 }
 .nav {
     margin: 30px;
     display: flex;
     align-items: center;
     gap: 2rem;
+}
+.logo h1 ,.nav a ,.logo i ,.profile i {
+    color: #ffffff;
+}
+.profile {
+    margin: 30px;
+    cursor: pointer;
+}
+.profile i {
+    font-size: 2rem;
 }
 #main {
     display: grid;
@@ -21,6 +36,7 @@
 .books {
     display: grid;
     grid-template-rows: auto 10%;
+    height: 100%;
 }
 .btn #next {
     width: 30%;
@@ -41,4 +57,19 @@
     border-radius: 22px;
     color: #807ef7;
     cursor: pointer;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    overflow: scroll;
+    margin: 2rem;
+}
+.cards .card {
+    width: 100%;
+    height: 19rem;
+    background: #8a8a8b;
 }
