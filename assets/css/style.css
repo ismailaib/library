@@ -40,10 +40,12 @@ body,html {
 i {
     color: #807ef7;
 }
-h1 {
+h1 , a {
     display: flex;
     align-items: center;
     gap: 1rem;
+    color: #807ef7;
+    justify-content: center;
 }
 .bullets-container {
     height: 3rem;

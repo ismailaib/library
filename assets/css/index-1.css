@@ -1,6 +1,3 @@
-body,html {
-    overflow: scroll;
-}
 .header {
     display: flex;
     align-items: center;
@@ -32,7 +29,7 @@ body,html {
 }
 .content {
     display: grid;
-    grid-template-columns: 25% auto;
+    grid-template-columns: 100%;
     overflow: hidden;
 }
 .books {
@@ -40,6 +37,18 @@ body,html {
     grid-template-rows: auto 10%;
     height: 100%;
     overflow: scroll;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: flex-end;
+    margin: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 2rem;
+    background: white;
 }
 .btn #next {
     width: 30%;
@@ -64,109 +73,27 @@ body,html {
 
 .container-active {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     gap: 2rem;
     justify-items: center;
     align-items: center;
-    margin: 2rem;
+    padding: 2rem;
 }
 .container-active .card {
     width: 100%;
-    height: 19rem;
+    height: 30rem;
     background: #8a8a8b;
     background-repeat: no-repeat;
-    background-size: cover;  
-    background-position: top;
+    background-size: cover;
+    background-position: center;
     transition: all 300ms ease;
     cursor: pointer;
 }
 .container-active .card:hover {
-    background-position: bottom;
+    
 }
-/* c-1 */
-.container-active #card-1 {
-    background-image: url('../img/war-1.jpg');
-}
-.container-active #card-2 {
-    background-image: url('../img/war-2.jpg');
-}
-.container-active #card-3 {
-    background-image: url('../img/war-3.jpg');
-}
-.container-active #card-4 {
-    background-image: url('../img/adv-1.webp');
-}
-.container-active #card-5 {
-    background-image: url('../img/adv-2.jpg');
-}
-.container-active #card-6 {
-    background-image: url('../img/adv-3.jpg');
-}
-.container-active #card-7 {
-    background-image: url('../img/cla-1.jpg');
-}
-.container-active #card-8 {
-    background-image: url('../img/cla-2.jpg');
-}
-.container-active #card-9 {
-    background-image: url('../img/cla-3.jpg');
-}
-/* c-2 */
-.container-active #card-1 {
-    background-image: url('../img/war-1.jpg');
-}
-.container-active #card-2 {
-    background-image: url('../img/war-2.jpg');
-}
-.container-active #card-3 {
-    background-image: url('../img/war-3.jpg');
-}
-.container-active #card-4 {
-    background-image: url('../img/adv-1.webp');
-}
-.container-active #card-5 {
-    background-image: url('../img/adv-2.jpg');
-}
-.container-active #card-6 {
-    background-image: url('../img/adv-3.jpg');
-}
-.container-active #card-7 {
-    background-image: url('../img/cla-1.jpg');
-}
-.container-active #card-8 {
-    background-image: url('../img/cla-2.jpg');
-}
-.container-active #card-9 {
-    background-image: url('../img/cla-3.jpg');
-}
-/* c-3 */
-.container-active #card-1 {
-    background-image: url('../img/war-1.jpg');
-}
-.container-active #card-2 {
-    background-image: url('../img/war-2.jpg');
-}
-.container-active #card-3 {
-    background-image: url('../img/war-3.jpg');
-}
-.container-active #card-4 {
-    background-image: url('../img/adv-1.webp');
-}
-.container-active #card-5 {
-    background-image: url('../img/adv-2.jpg');
-}
-.container-active #card-6 {
-    background-image: url('../img/adv-3.jpg');
-}
-.container-active #card-7 {
-    background-image: url('../img/cla-1.jpg');
-}
-.container-active #card-8 {
-    background-image: url('../img/cla-2.jpg');
-}
-.container-active #card-9 {
-    background-image: url('../img/cla-3.jpg');
-}
+
+
 .container-active {
     display: none; /* hide all containers by default */
 }
