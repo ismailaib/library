@@ -1,86 +1,193 @@
-var containers = document.getElementsByClassName("container-active"); // get all containers
-var currentContainer = 0; // keep track of the current container
+searchForm = document.querySelector(".search-form");
 
-containers[currentContainer].classList.add("active"); // set the first container as active
+document.querySelector("#search-btn").onclick = () => {
+  searchForm.classList.toggle("active");
+};
 
-document.getElementById("next").addEventListener("click", function() {
-    containers[currentContainer].classList.remove("active"); // hide the current container
-    currentContainer = (currentContainer + 1) % containers.length; // increment the current container
-    containers[currentContainer].classList.add("active"); // show the new container
+
+
+
+
+var arr = [{
+  "Name": "Le Petit Nicolat",
+  "Price": "$15.99",
+  "Img":"assets/img/book-0.jpg"
+},
+{
+  "Name": "Mystery",
+  "Price": "$20.99",
+  "Img":"assets/img/book-1.jpg"
+},
+{
+  "Name": "Harry Potter",
+  "Price": "$25.99",
+  "Img":"assets/img/book-2.jpg"
+},
+{
+  "Name": "Land of Stories",
+  "Price": "$25.99",
+  "Img":"assets/img/book-3.jpg"
+},
+{
+  "Name": "Steve Jobs",
+  "Price": "$30.99",
+  "Img":"assets/img/book-4.jpg"
+},
+{
+  "Name": "Copperfield",
+  "Price": "$30.99",
+  "Img":"assets/img/book-5.jpg"
+},
+{
+  "Name": "Washington",
+  "Price": "$30.99",
+  "Img":"assets/img/book-6.jpg"
+},
+{
+  "Name": "Mrs. Frisby",
+  "Price": "$30.99",
+  "Img":"assets/img/book-7.jpg"
+},
+{
+  "Name": "Call of the Wild",
+  "Price": "$30.99",
+  "Img":"assets/img/book-8.jpg"
+},
+{
+  "Name": "Mobydick",
+  "Price": "$30.99",
+  "Img":"assets/img/book-9.jpg"
+},
+{
+  "Name": "Empire of pain",
+  "Price": "$30.99",
+  "Img":"assets/img/book-10.jpg"
+},
+{
+  "Name": "Bad Blood",
+  "Price": "$30.99",
+  "Img":"assets/img/book-11.jpg"
+},
+{
+  "Name": "The Red Part",
+  "Price": "$30.99",
+  "Img":"assets/img/book-12.jpg"
+},
+{
+  "Name": "Invisible Man",
+  "Price": "$30.99",
+  "Img":"assets/img/book-13.jpg"
+},
+{
+  "Name": "Dracula",
+  "Price": "$30.99",
+  "Img":"assets/img/book-14.jpg"
+},
+{
+  "Name": "The Trial",
+  "Price": "$30.99",
+  "Img":"assets/img/book-15.jpg"
+},
+{
+  "Name": "A.Q.O.T.F",
+  "Price": "$30.99",
+  "Img":"assets/img/book-16.jpg"
+},
+{
+  "Name": "Catch-22",
+  "Price": "$30.99",
+  "Img":"assets/img/book-17.jpg"
+},
+{
+  "Name": "Le Petit Prince",
+  "Price": "$30.99",
+  "Img":"assets/img/book-18.jpg"
+},
+];
+var featured = $('#featured .swiper-wrapper');
+$.each(arr, function(i, item) {
+var templateString = '<div class="swiper-slide box">' +
+  '<div class="icons">' +
+  '<a href="#" class="fas fa-heart"></a>' +
+  '<a href="#" class="fas fa-eye"></a>' +
+  '</div>' +
+  '<div class="image">' +
+  '<img src="' + item.Img + '" alt="">' +
+  '</div>' +
+  '<div class="content">' +
+  '<h3>' + item.Name + '</h3>' +
+  '<div class="price">' + item.Price + '</div>' +
+  '<a href="#" class="btn">add to cart</a>' +
+  '</div>' +
+  '</div>';
+featured.append(templateString);
 });
 
-document.getElementById("prev").addEventListener("click", function() {
-    containers[currentContainer].classList.remove("active"); // hide the current container
-    currentContainer = (currentContainer - 1 + containers.length) % containers.length; // decrement the current container
-    containers[currentContainer].classList.add("active"); // show the new container
+$(document).ready(function() {
+  $('.btn').on('click', function() {
+      // code to add the item to the cart goes here
+      alert('Item added to cart!');
+  });
 });
 
-let container = document.getElementById("container-1");
 
-for (let i = 1; i <= 12; i++) {
-  let card = document.createElement("div");
-  card.classList.add("card");
-  card.id = "card-" + i;
-  container.appendChild(card);
-}
-
-for (let i = 1; i <= 12; i++) {
-    let card = document.getElementById("card-" + i);
-    if(i <= 3) {
-      card.style.backgroundImage = "url('assets/img/war-" + i + ".jpg')";
-    } else if(i > 3 && i <= 6) {
-      card.style.backgroundImage = "url('assets/img/adv-" + (i-3) + ".jpg')";
-    } else if(i > 6 && i <= 9) {
-      card.style.backgroundImage = "url('assets/img/cla-" + (i-6) + ".jpg')";
-    } else if(i > 9 && i <= 12) {
-      card.style.backgroundImage = "url('assets/img/cri-" + (i-9) + ".jpg')";
-    }
-  }
+$(document).ready(function(){
+  $("#cart-icon").click(function(){
+    $("#side-bar").toggleClass("show");
+  });
+});
 
 
 
-let container2 = document.getElementById("container-2");
-
-for (let i = 13; i <= 24; i++) {
-  let card = document.createElement("div");
-  card.classList.add("card");
-  card.id = "card-" + i;
-  container2.appendChild(card);
-}
-
-for (let i = 13; i <= 24; i++) {
-    let card = document.getElementById("card-" + i);
-    if(i <= 15) {
-      card.style.backgroundImage = "url('assets/img/ho-" + (i-12) + ".jpg')";
-    } else if(i > 15 && i <= 18) {
-      card.style.backgroundImage = "url('assets/img/bio-" + (i-15) + ".jpg')";
-    }else if(i > 18 && i <= 21) {
-      card.style.backgroundImage = "url('assets/img/war-" + (i-18) + ".jpg')";
-    }else if(i > 21 && i <= 24) {
-      card.style.backgroundImage = "url('assets/img/adv-" + (i-21) + ".jpg')";
-    }
-  }
-  
 
 
-let container3 = document.getElementById("container-3");
 
-for (let i = 25; i <= 36; i++) {
-  let card = document.createElement("div");
-  card.classList.add("card");
-  card.id = "card-" + i;
-  container3.appendChild(card);
-}
 
-for (let i = 25; i <= 36; i++) {
-    let card = document.getElementById("card-" + i);
-    if(i <= 27) {
-        card.style.backgroundImage = "url('assets/img/adv-" + (i-24) + ".jpg')";
-    } else if(i > 27 && i <= 30) {
-        card.style.backgroundImage = "url('assets/img/ho-" + (i-27) + ".jpg')";
-    }else if(i > 30 && i <= 33) {
-        card.style.backgroundImage = "url('assets/img/adv-" + (i-30) + ".jpg')";
-    }else if(i > 33 && i <= 36) {
-        card.style.backgroundImage = "url('assets/img/war-" + (i-33) + ".jpg')";
-    }
-  }
+
+
+
+
+const tabsBox = document.querySelector(".tabs-box"),
+  allTabs = tabsBox.querySelectorAll(".tab"),
+  arrowIcons = document.querySelectorAll(".icon i");
+
+let isDragging = false;
+
+const handleIcons = (scrollVal) => {
+  let maxScrollableWidth = tabsBox.scrollWidth - tabsBox.clientWidth;
+  arrowIcons[0].parentElement.style.display = scrollVal <= 0 ? "none" : "flex";
+  arrowIcons[1].parentElement.style.display =
+    maxScrollableWidth - scrollVal <= 1 ? "none" : "flex";
+};
+
+arrowIcons.forEach((icon) => {
+  icon.addEventListener("click", () => {
+    // if clicked icon is left, reduce 350 from tabsBox scrollLeft else add
+    let scrollWidth = (tabsBox.scrollLeft += icon.id === "left" ? -340 : 340);
+    handleIcons(scrollWidth);
+  });
+});
+
+allTabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    tabsBox.querySelector(".active").classList.remove("active");
+    tab.classList.add("active");
+  });
+});
+
+const dragging = (e) => {
+  if (!isDragging) return;
+  tabsBox.classList.add("dragging");
+  tabsBox.scrollLeft -= e.movementX;
+  handleIcons(tabsBox.scrollLeft);
+};
+
+const dragStop = () => {
+  isDragging = false;
+  tabsBox.classList.remove("dragging");
+};
+
+tabsBox.addEventListener("mousedown", () => (isDragging = true));
+tabsBox.addEventListener("mousemove", dragging);
+document.addEventListener("mouseup", dragStop);
+

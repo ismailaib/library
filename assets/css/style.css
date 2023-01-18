@@ -1,14 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@500;700;800;900&family=Lexend+Mega:wght@300;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lexend Mega', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     text-decoration: none;
     list-style: none;
 }
-
+:root{
+    --pricipale:#807ef7;
+    --seconde:#a7a6f8;
+    --black:#444;
+    --light-color:#666;
+    --border:.1rem solid rgba(0,0,0,.1);
+}
 body,html {
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
@@ -38,14 +44,15 @@ body,html {
     cursor: pointer;
 }
 i {
-    color: #807ef7;
+    color: var(--pricipale);
 }
-h1 , a {
+h1, a {
     display: flex;
     align-items: center;
     gap: 1rem;
-    color: #807ef7;
+    color: var(--black);
     justify-content: center;
+    font-weight: 900;
 }
 .bullets-container {
     height: 3rem;
@@ -73,15 +80,15 @@ h1 , a {
     background: none;
 }
 #next-button {
-    background: #807ef7;
+    background: var(--pricipale);
     color: white;
     border-radius: 15px;
     transition: all 300ms ease;
 }
 #next-button:hover {
     background: #ffffff;
-    color: #807ef7;
-    border: 2px solid #807ef7;
+    color: var(--pricipale);
+    border: 2px solid var(--pricipale);
     border-radius: 15px;
 }
 footer {
@@ -112,7 +119,7 @@ footer {
   .separator::after {
     content: '';
     flex: 1;
-    border-bottom: 1px solid #807ef7;
+    border-bottom: 1px solid var(--pricipale);
   }
   
   .separator:not(:empty)::before {
@@ -146,7 +153,7 @@ footer {
     width: 3rem;
     height: 0.7rem;
     border-radius: 20px;
-    background-color: gray;
+    background-color: var(--light-color);
     display: inline-block;
     margin-right: 5px;
 }
@@ -158,10 +165,10 @@ footer {
 .field{
     height: 4rem;
 	width: 80%;
-	border: 2px solid rgba(0, 0, 0, 0);
+	border: 2px solid #00000000;
     border-radius: 20px;
 	outline: none;
-	background-color: rgba(230, 230, 230, 0.6);
+	background-color: #e6e6e699;
 	padding: 0.5rem 1rem;
 	font-size: 1.1rem;
 	margin-bottom: 22px;
@@ -171,8 +178,8 @@ footer {
 .field:hover{
 	background-color: rgba(0, 0, 0, 0.1);
 }
-.signin h2{
-    color: #807ef7;
+h2 {
+    color: var(--pricipale);
     font-weight: 900;
 }
 #content3 {
@@ -188,7 +195,7 @@ footer {
     overflow: scroll;
 }
 #content3 h2{
-    color: #807ef7;
+    color: var(--pricipale);
     font-weight: 900;
 }
 .cat {
@@ -200,8 +207,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     transition: all 300ms ease 0s;
-    background: rgb(255, 255, 255);
-    border: 3px solid rgb(228, 228, 247);
+    background: #ffffff;
+    border: 3px solid #e4e4f7;
     height: 12rem;
 }
 .cat:hover {
@@ -231,7 +238,7 @@ footer {
 #content4 a {
     width: 100%;
     height: 3rem;
-    background: #807ef7;
+    background: var(--pricipale);
     border: none;
     border-radius: 22px;
     color: white;
@@ -245,8 +252,8 @@ footer {
     width: 100%;
     height: 3rem;
     background: #ffffff;
-    border: 2px solid #807ef7;
+    border: 2px solid var(--pricipale);
     border-radius: 22px;
-    color: #807ef7;
+    color: var(--pricipale);
     cursor: pointer;
 }

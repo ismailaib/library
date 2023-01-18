@@ -1,53 +1,86 @@
 <!-- ismailaib :) :) :) :) :) :) -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- font-awesom -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- link -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/index-1.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/sidebar.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>library | by ismailaib</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <!-- font-awesom -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- link -->
+  <link rel="stylesheet" href="assets/css/index-1.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>library | by ismailaib</title>
 </head>
+
 <body>
-    <div id="main">
-        <div class="header">
-            <div class="logo">
-               <a href="index.html"><h1><i class="fa-solid fa-book"></i>library</h1></a> 
-            </div>
-            <div class="nav">
-                <a href="#">What's new</a>
-                <a href="#">Categories</a>
-                <a href="#">Settings</a>
-            </div>
-            <div class="profile">
-                <i class="fa-solid fa-user"></i>
-            </div>
+  <div class="top">
+    <header class="header">
+      <div class="header-1">
+        <a href="#" class="logo"> <i class="fas fa-book"></i> library </a>
+        <form action="" class="search-form">
+          <input type="search" name="" placeholder="search here..." id="search-box">
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="icons">
+          <div id="search-btn" class="fas fa-search"></div>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="index.html" class="fas fas fa-user"></a>
         </div>
-        <div class="content">
-            <div class="sidebar"></div>
-            <div class="books">
-                <div id="container-1" class="container-active active">
-                    
-                </div>
-                <div id="container-2" class="container-active">
-                </div>
-                <div id="container-3" class="container-active">
-                </div>
-                <div class="btn">
-                    <a href="#" id="prev">Previous</a>
-                    <a href="#"id="next">Next</a>
-                </div>
-            </div>
-        </div>
+      </div>
+    </header>
+  </div>
+
+  <nav class="bottom-navbar">
+    <a href="#wrapper" class="fas fa-list"></a>
+    <a href="#" id="cart-icon" class="fas fa-shopping-cart"></a>
+    <a href="#deal" class="fas fa-home"></a>
+    <a href="#" class="fas fa-heart"></a>
+    <a href="index.html" class="fas fas fa-user"></a>
+  </nav>
+
+  <section class="deal" id="deal">
+    <div class="content">
+      <h3>Story Of Today</h3>
+      <h1>david copperfield</h1>
+      <p>The story follows the life of David Copperfield from childhood to maturity. David was born in Blunderstone, Suffolk, England, six months after the death of his father. David spends his early years in relative happiness with his loving, childish mother and their kindly housekeeper, Clara Peggotty. They call him Davy.</p>
+      <a href="#" class="btn">shop now</a>
     </div>
-    <script src="assets/js/script-1.js"></script>
+
+    <div class="image">
+      <img src="assets/img/book-5.jpg" alt="">
+    </div>
+  </section>
+  <div class="wrapper" id="wrapper">
+    <div class="icon"><i id="left" class="fa-solid fa-angle-left"></i></div>
+    <ul class="tabs-box">
+      <li class="tab active">All</li>
+      <li class="tab">Top sells</li>
+      <li class="tab">Adventure stories</li>
+      <li class="tab">Classics</li>
+      <li class="tab">Crime</li>
+      <li class="tab">Horror</li>
+      <li class="tab">War</li>
+      <li class="tab">Biography</li>
+      <li class="tab">Short stories</li>
+      <li class="tab">Fantasy</li>
+      <li class="tab">Comedy</li>
+    </ul>
+    <div class="icon"><i id="right" class="fa-solid fa-angle-right"></i></div>
+  </div>
+  <section class="featured" id="featured">
+    <div class="swiper featured-slider">
+      <div class="swiper-wrapper">
+        <!-- the cards here -->
+      </div>
+    </div>
+  </section>
+  <div id="side-bar">Side Bar Content</div>
+  <script src="assets/js/script-1.js"></script>
 </body>
+
 </html>
