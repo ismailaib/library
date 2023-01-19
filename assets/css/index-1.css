@@ -179,7 +179,7 @@ section {
 .bottom-navbar a:hover {
   background: var(--seconde);
 }
-.box p {
+.box p , .box h5 {
     display: none;
 }
 .featured .featured-slider .box {
@@ -188,7 +188,11 @@ section {
   overflow: hidden;
   text-align: center;
 }
-
+.deal .price {
+  font-size: 2.2rem;
+  color: var(--black);
+  padding-top: 1rem;
+}
 .featured .featured-slider .box .image {
   padding: 1rem;
 }
@@ -225,7 +229,7 @@ section {
   color: #fd7777;
 }
 .featured .featured-slider .box .icons #eye:hover {
-    color: #504285;
+    color: #6bc8e4;
   }
 .featured .featured-slider .box .content {
   padding: 1.5rem;
@@ -252,7 +256,10 @@ section {
   grid-template-columns: auto auto auto;
   gap: 2rem;
 }
-
+.deal h5 {
+  font-size: 1.2rem;
+  color: var(--pricipale);
+}
 .deal {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -366,12 +373,3 @@ section {
   background: var(--pricipale);
   border-color: transparent;
 }
-
-#side-bar {
-    display: none;
-  }
-  
-  .show {
-    display: block;
-  }
-  
