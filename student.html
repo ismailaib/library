@@ -45,8 +45,27 @@
   </nav>
   <section class="main">
     <div class="cards">
-        <div class="mybooks"></div>
-        <div class="settings"></div>
+        <div class="card" id="mysettings">
+          <a href="#" class="fas fa-gear"></a>
+          <h3>Settings</h3>
+        </div>
+        <div class="card" id="myrequest">
+          <a href="#" class="fas fa-book-open-reader"></a>
+          <h3>MyRequest</h3>
+        </div>
+        <div class="card" id="myprogress">
+          <a href="#" class="fas fa-list-check"></a>
+          <h3>MyProgress</h3>
+        </div>
+    </div>
+    <div class="settings">
+      <form action="" id="modification">
+        <input type="text" class="field" id="name" name="name" placeholder="Change Your Name Here" required>
+        <input type="email" class="field" id="email" name="email" placeholder="Change Your E-mail">
+        <input type="password" class="field" id="password" name="password" placeholder="Change Your Your Password">
+        <input type="password" class="field" id="password" name="password" placeholder="Confirme password">
+        <input type="button" value="Submit">
+      </form>  
     </div>
     <div class="request">
         <table>
@@ -64,36 +83,9 @@
               <td>in progresse</td>
               <td><button>cancel</button></td>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>book name</td>
-                <td>Adventure</td>
-                <td>in progresse</td>
-                <td><button>cancel</button></td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>book name</td>
-                <td>Adventure</td>
-                <td>in progresse</td>
-                <td><button>cancel</button></td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>book name</td>
-                <td>Adventure</td>
-                <td>in progresse</td>
-                <td><button>cancel</button></td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>book name</td>
-                <td>Adventure</td>
-                <td>in progresse</td>
-                <td><button>cancel</button></td>
-              </tr>
         </table>
     </div>
+
   </section>
   <script src="assets/js/script-1.js"></script>
   <script src="assets/js/student.js"></script>

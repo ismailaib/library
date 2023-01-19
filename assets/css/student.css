@@ -1,8 +1,6 @@
-.main{
-    display: grid;
-    grid-template-rows: 50% 50%;
-    margin-top: 5rem;
-    height: 100vh;
+.main {
+  display: grid;
+  margin-top: 5rem;
 }
 table {
     width: 100%;
@@ -19,3 +17,66 @@ table {
     background-color: #dddddd;
   }
   
+.cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2rem;
+    gap: 2rem;
+    height: fit-content;
+}
+.cards .card {
+  background: #807ef7;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.bottom-navbar a , .cards a {
+  font-size: 2.5rem;
+  padding: 2rem;
+  color: #fff;
+}
+.card h3 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+#modification {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.field{
+  height: 4rem;
+width: 80%;
+border: 2px solid #00000000;
+  border-radius: 20px;
+outline: none;
+background-color: #e6e6e699;
+padding: 0.5rem 1rem;
+font-size: 1.1rem;
+margin-bottom: 22px;
+transition: .3s;
+}
+
+.field:hover{
+background-color: rgba(0, 0, 0, 0.1);
+}
+
+input[type="button"] {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  border-radius: 0.5rem;
+  color: var(--pricipale);
+  font-size: 1.7rem;
+  font-weight: 500;
+  border: 2px solid var(--pricipale);
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  color: white;
+  background: var(--pricipale);
+}
