@@ -100,6 +100,7 @@ footer {
 .content {
     display: grid;
     grid-template-columns: 40% 60%;
+    overflow: scroll;
 }
 .content .content-img {
     background-image: url('../img/35.jpg');

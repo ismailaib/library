@@ -1,0 +1,21 @@
+.main{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    margin-top: 5rem;
+    height: 100vh;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #dddddd;
+  }
+  
