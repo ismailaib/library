@@ -80,3 +80,11 @@ input[type="button"]:hover {
   color: white;
   background: var(--pricipale);
 }
+.text {
+  display: flex;
+  justify-content: center;
+  color: var(--black);
+}
+.progress , .settings, .request {
+  display: none;
+ }
