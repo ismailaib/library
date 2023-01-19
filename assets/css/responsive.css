@@ -125,7 +125,7 @@
     display: flex;
     justify-content: center;
   }
-  .icons {
+  #header-icons {
     display: none;
   }
 }

@@ -179,7 +179,9 @@ section {
 .bottom-navbar a:hover {
   background: var(--seconde);
 }
-
+.box p {
+    display: none;
+}
 .featured .featured-slider .box {
   margin: 2rem 0;
   position: relative;
@@ -219,11 +221,12 @@ section {
   padding: 1.3rem 1.5rem;
 }
 
-.featured .featured-slider .box .icons a:hover {
-  background: var(--pricipale);
-  color: #fff;
+.featured .featured-slider .box .icons #heart:hover {
+  color: #fd7777;
 }
-
+.featured .featured-slider .box .icons #eye:hover {
+    color: #504285;
+  }
 .featured .featured-slider .box .content {
   padding: 1.5rem;
 }
@@ -268,7 +271,7 @@ section {
   width: 60%;
 }
 
-.deal .content h3 {
+.deal .content h4 {
   color: var(--pricipale);
   font-size: 2.5rem;
   padding-bottom: 0.5rem;
