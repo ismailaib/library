@@ -130,3 +130,12 @@
 }
 
 }
+
+/* student  */
+
+@media (max-width: 768px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
