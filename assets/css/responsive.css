@@ -31,9 +31,6 @@
 /* index-1  */
 
 @media (max-width: 991px) {
-  html {
-    font-size: 55%;
-  }
 
   .header .header-1 {
     padding: 2rem;
@@ -124,9 +121,6 @@
 }
 
 @media (max-width: 450px) {
-  html {
-    font-size: 50%;
-  }
 }
 
 }
