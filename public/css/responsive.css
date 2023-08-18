@@ -1,0 +1,144 @@
+/* index */
+@media screen and (max-width:720px) {
+    .content {
+      display: grid;
+      grid-template-columns: 100%;
+    }
+    .content .content-img {
+      display: none;
+    }
+    .categories {
+      display: flex;
+      flex-direction: column;
+      overflow: scroll;
+    }
+    .cat {
+      padding: 2rem;
+    }
+    ul {
+      overflow: scroll;
+      height: 27rem;
+    }
+    footer {
+      margin: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column-reverse;
+  }
+  }
+  
+  /* index-1  */
+  
+  @media (max-width: 991px) {
+    html {
+      font-size: 100%;
+    }
+  
+    .header .header-1 {
+      padding: 2rem;
+    }
+  
+    section {
+      padding: 3rem 2rem;
+    }
+    .deal {
+      display: grid;
+      grid-template-columns: 100%;
+      gap: 2rem;
+      align-items: center;
+      justify-items: center;
+    }
+    .swiper-wrapper {
+      grid-template-columns: 50% 50%;
+    }
+    .deal .image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  @media (max-width: 768px) {
+  
+    .header .header-2 {
+      display: none;
+    }
+  
+    .bottom-navbar {
+      display: block;
+    }
+  
+    #search-btn {
+      display: inline-block;
+    }
+  
+    .header .header-1 {
+      box-shadow: var(--box-shadow);
+      position: relative;
+    }
+  
+    .header .header-1 .search-form {
+      position: absolute;
+      top: -115%;
+      right: 2rem;
+      width: 90%;
+      box-shadow: var(--box-shadow);
+    }
+  
+    .header .header-1 .search-form.active {
+      top: 115%;
+    }
+  
+    .home .row .content {
+      text-align: center;
+    }
+  
+    .home .row .content h3 {
+      font-size: 3.5rem;
+    }
+  
+    .newsletter {
+      background-position: right;
+    }
+  
+    .newsletter form {
+      margin-left: 0;
+      max-width: 100%;
+    }
+    .content {
+      display: grid;
+      grid-template-columns: 100%;
+      justify-items: center;
+      text-align: center;
+    }
+    .swiper-wrapper {
+      grid-template-columns: 100%;
+    }
+    .header .header-1 {
+      display: flex;
+      justify-content: center;
+    }
+    #header-icons {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 100%;
+    }
+  }
+  
+  }
+  
+  /* student  */
+  
+  @media (max-width: 768px) {
+    .cards {
+      display: grid;
+      grid-template-columns: 100%;
+    }
+  }
+
+
+  

@@ -1,0 +1,288 @@
+.welcome h1 {
+  color: var(--black);
+  font-size: 3rem;
+}
+.students {
+    padding: 0rem;
+}
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+  height: fit-content;
+}
+.cards .card {
+background: #807ef7;
+border-radius: 20px;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+}
+.bottom-navbar a , .cards a {
+font-size: 2.5rem;
+padding: 2rem;
+color: #fff;
+}
+.card h3 {
+color: #fff;
+font-size: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.2rem;
+    padding: 2rem;
+  }
+  
+  th, td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  
+  th {
+    background-color: #dddddd;
+  }
+
+  i.fa-solid.fa-pen-to-square {
+    font-size: 2rem;
+    color: #50d9f1;
+}
+i.fa-solid.fa-trash {
+    font-size: 2rem;
+    color: #f13838;
+}
+
+a.fas.fa-student.fa-plus {
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: #ffffff;
+    background: #807ef7;
+    border: 1px solid #807ef7;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: fit-content;
+}
+
+a.fas.fa-student.fa-plus:hover {
+    color: #807ef7;
+    background: #4caf4f00;
+    border: 1px solid #807ef7;
+}
+
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+form b {
+    font-size: 2rem;
+}
+.form-container input[type=text], .form-container input[type=password] , .form-container input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+form h2 {
+    color: #807ef7;
+    font-weight: 900;
+    font-size: 3.4rem;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title a {
+    font-size: 3rem;
+    color: red;
+}
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+.delete-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  background-color: white;
+  padding: 2rem;
+}
+.update-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.update-popup {
+  background-color: white;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+form b {
+    font-size: 2rem;
+}
+.form-container input[type=text], .form-container input[type=password] , .form-container input[type=email] , .form-container input[type=number] , .form-container input[type=file] , .form-container input[type=date] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+select.field {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+label {
+  font-size: 3rem;
+}
+form h2 {
+    color: #807ef7;
+    font-weight: 900;
+    font-size: 3.4rem;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title a {
+    font-size: 3rem;
+    color: red;
+}
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+.students {
+  padding: 3rem 0 0 0;
+}
+
+.main {
+  padding: 12rem;
+}
+
+.welcome h1 {
+  color: var(--black);
+  font-size: 3rem;
+  padding-bottom: 3rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+  height: fit-content;
+}
+
+.cards .card {
+  background: #807ef7;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.bottom-navbar a,
+.cards a {
+  font-size: 2.5rem;
+  padding: 2rem;
+  color: #fff;
+}
+
+.card h3 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  color: var(--black);
+  align-items: center;
+  height: 50vh;
+}
+
+.statistiques,
+.students,
+.books,
+.requests {
+  display: none;
+}
+.statistiques,
+.books , .requests {
+  padding-top: 3rem;
+}
+
+.requests {
+  padding-top: 4rem;
+}
+
+table#command-table {
+  margin-bottom: 4rem;
+}
+
+.cards .card {
+background: #807ef7;
+border-radius: 20px;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-right: 30px;
+}
+
+.scrollable-element {
+  scrollbar-width: none;
+}
+
+select.field {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+div#book-table_length ,div#studentsTable_length {
+    padding: 2rem;
+}
+i.fa-solid.fa-check {
+  color: green;
+  font-size: 2rem;
+}
+i.fa-solid.fa-x {
+  font-size: 2rem;
+  color: #f24949;
+}

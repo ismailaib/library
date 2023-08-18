@@ -1,0 +1,20 @@
+$.ajax({
+         url: "{{route('customer_service_orders_statistics')}}",
+         type:"GET",
+         data:{
+           service_id: "{{$service->id}}",
+           _token: $('meta[id="_token"]').val()
+         },
+          beforeSend:function(){
+             // $("#module").prop('disabled', true);
+              
+          }
+         ,
+         success:function(response){
+          // alert(response);
+           $("#service_orders_stats").html(response);
+         //  $("#module").prop('disabled', false);
+         },
+         error: function(error) {
+         }
+});
